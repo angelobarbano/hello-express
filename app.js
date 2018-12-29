@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const hbs = require('hbs');
 const fs = require('fs');
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.set('view.engine', 'hbs');
 hbs.registerPartials(__dirname + '/views/partials');
@@ -44,4 +44,4 @@ app.get('/handle', (req,res) => {
 
 app.get('/bad', (req,res) => res.send({error: 'Yo I can\'t do that!'}));
 
-app.listen(port,() => console.log(`Waiting for something to do on port${port}`))
+app.listen(port,() => console.log(`Waiting for something to do on port ${port}`))
