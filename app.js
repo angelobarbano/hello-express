@@ -44,4 +44,10 @@ app.get('/handle', (req,res) => {
 
 app.get('/bad', (req,res) => res.send({error: 'Yo I can\'t do that!'}));
 
+app.get('/projects', (req,res) => {
+    res.render('projects.hbs',{
+        pageTitle: "Project Page"
+    });
+});
+
 app.listen(port,() => console.log(`Waiting for something to do on port ${port}`))
