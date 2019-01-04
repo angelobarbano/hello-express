@@ -7,6 +7,11 @@ const port = process.env.PORT || 3000;
 app.set('view.engine', 'hbs');
 hbs.registerPartials(__dirname + '/views/partials');
 hbs.registerHelper('year', () =>{ return new Date().getFullYear()});
+hbs.registerHelper('greeting', () =>{
+    let greetArray = ['Yo! Wadda ya want?!!!','Sup fam.', 'Greetings internet stranger!', 'Cant this wait? Im on break!', 'Ugh, do we have to?'];
+    let randomGreet = greetArray[Math.floor(Math.random() * greetArray.length)];
+    return randomGreet;
+});
 app.use((req, res, next) => {
     var now = new Date().toString();
     var log = `${now}: ${req.method} ${req.url}`;
