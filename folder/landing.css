@@ -4,18 +4,40 @@ body{
     background-color: #d5d5d5;
 }
 navbar{
-    background-color: teal;
+    background-color: white;
     
 }
 #intro{
-    background-color: #FC4A1A;
-
+    background-color: white;
+    border-style: groove;
+    border-width: 5px;
+    border-color: #9099A2;
+    max-width:75%;
+    justify-content: center;
+    box-align: center;
 }
 
+
+
 #services{
+    
     background-color: white;
+    border-style: groove;
+    border-width: 5px;
+    border-color: #9099A2;
+    max-width:75%;
+    justify-content: center;
+    box-align: center;
 }
 
 #contact{
+    background-color: white;
+    border-style: groove;
+    border-width: 5px;
+    border-color: #9099A2;
+    max-width:75%;
+    justify-content: center;
+    box-align: center;
+}
 
 }

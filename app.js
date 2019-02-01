@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 app.use(express.static(__dirname + '/folder'));
 
 app.get('/', (req, res) => { res.render('landing.hbs', {
-    pageTitle: "Landing Page"
+    pageTitle: "Landing Page",
     });
 });
 
