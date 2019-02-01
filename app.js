@@ -30,8 +30,17 @@ app.use((req, res, next) => {
 });*/
 app.use(express.static(__dirname + '/folder'));
 
-app.get('/', (req, res) => res.send('Yo! Wadda ya want?!'));
+app.get('/', (req, res) => { res.render('landing.hbs', {
+    pageTitle: "Landing Page"
+    });
+});
 
+app.get('/moz',(req,res) =>{
+    res.render('moz.hbs',{
+        pageTitle:"Morrisey Insult Generator"
+    });
+});
+    
 app.get('/home', (req,res) => {
     res.render('home.hbs', {
         pageTitle: "Dynahome",
