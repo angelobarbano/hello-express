@@ -12,6 +12,7 @@ hbs.registerHelper('greeting', () =>{
     let randomGreet = greetArray[Math.floor(Math.random() * greetArray.length)];
     return randomGreet;
 });
+
 app.use((req, res, next) => {
     var now = new Date().toString();
     var log = `${now}: ${req.method} ${req.url}`;
@@ -35,13 +36,11 @@ app.get('/', (req, res) => { res.render('landing.hbs', {
     });
 });
 
-app.get('/moz',(req,res) =>{
-    res.render('moz.hbs',{
-        pageTitle:"Morrisey Insult Generator"
-    });
+app.get('/moz',(req,res) => {
+    res.sendFile(__dirname + '/folder/moz.html');
 });
     
-app.get('/home', (req,res) => {
+app.get('/greet', (req,res) => {
     res.render('home.hbs', {
         pageTitle: "Dynahome",
         welcome: 'Dynamic greeting page, booyah!',

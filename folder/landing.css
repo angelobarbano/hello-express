@@ -7,27 +7,29 @@ navbar{
     background-color: white;
     
 }
+
 #intro{
     background-color: white;
     border-style: groove;
     border-width: 5px;
     border-color: #9099A2;
-    max-width:75%;
-    justify-content: center;
-    box-align: center;
+    max-width:50%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 2em;
 }
 
 
 
 #services{
-    
     background-color: white;
     border-style: groove;
     border-width: 5px;
     border-color: #9099A2;
-    max-width:75%;
-    justify-content: center;
-    box-align: center;
+    max-width:50%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 2em;
 }
 
 #contact{
@@ -35,9 +37,9 @@ navbar{
     border-style: groove;
     border-width: 5px;
     border-color: #9099A2;
-    max-width:75%;
-    justify-content: center;
-    box-align: center;
+    max-width:50%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 2em;
 }
 
-}
