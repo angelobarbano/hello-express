@@ -1,18 +1,36 @@
 body{
     text-align:center;
     font-family: sans-serif;
-    background-color: #d5d5d5;
+    background-color: #ad6a6c;
 }
-navbar{
-    background-color: white;
+ul{
+    list-style-type: none;
+    display: inline;
     
 }
+li{
+    float: left;
+}
+
+li a{
+    padding: 1em;
+    color: white;
+    text-decoration-line: none;
+
+}
+
+#headstyle{
+    background-color:#5D2E46;
+}
+
+
 
 #intro{
-    background-color: white;
+    background-color: #e8d6cb;
     border-style: groove;
     border-width: 5px;
-    border-color: #9099A2;
+    border-color: #d0ada7
+    ;
     max-width:50%;
     margin-left: auto;
     margin-right:auto;
@@ -22,10 +40,11 @@ navbar{
 
 
 #services{
-    background-color: white;
+    background-color: #e8d6cb;
     border-style: groove;
     border-width: 5px;
-    border-color: #9099A2;
+    border-color: #d0ada7
+    ;
     max-width:50%;
     margin-left: auto;
     margin-right:auto;
@@ -33,10 +52,11 @@ navbar{
 }
 
 #contact{
-    background-color: white;
+    background-color: #e8d6cb;
     border-style: groove;
     border-width: 5px;
-    border-color: #9099A2;
+    border-color: #d0ada7
+    ;
     max-width:50%;
     margin-left: auto;
     margin-right:auto;

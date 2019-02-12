@@ -1,3 +1,10 @@
+body{
+    
+    font-family: sans-serif;
+    background-image: url('pinktexture.jpg');
+   
+}
+
 #pic{
     max-height:500px;
 
