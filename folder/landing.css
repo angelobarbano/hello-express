@@ -3,11 +3,7 @@ body{
     font-family: sans-serif;
     background-color: #ad6a6c;
 }
-ul{
-    list-style-type: none;
-    display: inline;
-    
-}
+
 li{
     float: left;
 }
@@ -16,12 +12,10 @@ li a{
     padding: 1em;
     color: white;
     text-decoration-line: none;
-
+    display:block;
 }
 
-#headstyle{
-    background-color:#5D2E46;
-}
+
 
 
 
@@ -63,3 +57,9 @@ li a{
     margin-top: 2em;
 }
 
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #5D2E46;
+    
+}
