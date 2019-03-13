@@ -1,14 +1,12 @@
-body{
-    
-    font-family: sans-serif;
-    background-image: url('pinktexture.jpg');
-   
+body {
+  font-family: sans-serif;
+  background-color: #ad6a6c;
+  color: white;
 }
 
-#pic{
-    max-height:500px;
-
+#pic {
+  max-height: 500px;
 }
-#container{
-    text-align: center;
+#container {
+  text-align: center;
 }

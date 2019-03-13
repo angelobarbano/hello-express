@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="mozstyle.css">    
-    </head>
-    <script>
-    function newGreet(){
-      let greetArray = ['I can smell burning flesh…and I hope to God it’s human.','In the U.K. we live under a Nazi regime.', 'Robert Smith is a whingebag.', 'As for Brexit, the result was magnificent.', 
-      'It’s the refuge for the mentally deficient. It’s made by dull people for dull people.(on dance music)', 
-      'I\'m not even going tell you what he said about Chinese people', 'Bring me the head of Elton John . . . which is one instance in which meat would not be murder, if it were served on a plate.',
-    'Bob Geldof is a nauseating character. Band Aid was the most self-righteous platform ever in the history of popular music'];
-      let randomGreet = greetArray[Math.floor(Math.random() * greetArray.length)];
-      document.getElementById('demo').innerHTML = randomGreet;}
-    </script>
-    <body><div id='container'>
-        <h1>Morrisey Random Outrageous Quotes</h1>
-        <img id="pic" src='mozpic.jpg'>
-        <p id="demo">Phrase</p>
-        <button onclick='newGreet()'>New Comment</button></div>
-        <a href="/">back</a>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="mozstyle.css" />
+  </head>
+  <script>
+    function newGreet() {
+      let greetArray = [
+        "I can smell burning flesh…and I hope to God it’s human.",
+        "In the U.K. we live under a Nazi regime.",
+        "Robert Smith is a whingebag.",
+        "As for Brexit, the result was magnificent.",
+        "It’s the refuge for the mentally deficient. It’s made by dull people for dull people.(on dance music)",
+        "I'm not even going tell you what he said about Chinese people",
+        "Bring me the head of Elton John . . . which is one instance in which meat would not be murder, if it were served on a plate.",
+        "Bob Geldof is a nauseating character. Band Aid was the most self-righteous platform ever in the history of popular music"
+      ];
+      let randomGreet =
+        greetArray[Math.floor(Math.random() * greetArray.length)];
+      document.getElementById("demo").innerHTML = randomGreet;
+    }
+  </script>
+  <body>
+    <div id="container">
+      <h1>Morrisey Random Outrageous Quotes</h1>
+      <img id="pic" src="mozpic.jpg" />
+      <p id="demo">Phrase</p>
+      <button onclick="newGreet()">New Comment</button>
+      <button onclick="window.location.href='/'">Go Back</button>
+    </div>
+  </body>
 </html>
