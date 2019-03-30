@@ -3,6 +3,16 @@ body {
   font-family: sans-serif;
   background-color: #ad6a6c;
 }
+h1 {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  top: 0px;
+  background-color: #5d2e46;
+  color: #ad6a6c;
+}
 
 li {
   float: left;
@@ -49,7 +59,9 @@ li a {
 }
 
 ul {
-  list-style-type: none;
+  padding: 1em;
   overflow: hidden;
+  list-style-type: none;
+  width: 100%;
   background-color: #5d2e46;
 }

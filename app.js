@@ -21,6 +21,7 @@ hbs.registerHelper("greeting", () => {
   return randomGreet;
 });
 
+
 app.use((req, res, next) => {
   var now = new Date().toString();
   var log = `${now}: ${req.method} ${req.url}`;
@@ -50,7 +51,7 @@ app.get("/moz", (req, res) => {
 });
 
 app.get("/greet", (req, res) => {
-  res.render("home.hbs", {
+  res.render("greeting.hbs", {
     pageTitle: "Dynahome",
     welcome: "Dynamic greeting page, booyah!"
   });
